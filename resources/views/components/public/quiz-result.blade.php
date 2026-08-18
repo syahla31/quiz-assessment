@@ -9,8 +9,14 @@
             <p class="text-lg font-medium text-gray-700">Kategori: <span class="font-bold text-blue-800">{{ $category }}</span></p>
         </div>
 
-        <a href="/" class="inline-block bg-gray-600 text-white px-5 py-2 rounded hover:bg-gray-700">
-            Kembali ke Beranda
-        </a>
+        <div class="flex justify-center gap-3 mt-6">
+            <a href="{{ route('quiz.pdf.download', $submission->id) }}" class="inline-flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-sm font-medium shadow-sm transition">
+                Unduh PDF Hasil Tes
+            </a>
+            <a href="{{ route('home') }}" class="inline-flex items-center px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg text-sm font-medium transition">
+                Kembali ke Beranda
+            </a>
+        </div>
+        
     </div>
 </div>

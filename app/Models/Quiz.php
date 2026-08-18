@@ -12,6 +12,7 @@ class Quiz extends Model
         'description',
         'duration',
         'is_active',
+        'type', // <-- Tambahkan ini
     ];
 
     protected $casts = [

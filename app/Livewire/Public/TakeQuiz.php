@@ -39,6 +39,6 @@ class TakeQuiz extends Component
 
     public function render()
     {
-        return view('livewire.public.take-quiz');
+        return view('public.take-quiz');
     }
 }

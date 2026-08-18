@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->unsignedInteger('duration')->nullable();
             $table->boolean('is_active')->default(true);
+            $table->string('type')->default('scale'); // 'scale' (untuk DASS/Stress/Anxiety), 'mbti', 'disc', dll.
             $table->timestamps();
         });
     }
